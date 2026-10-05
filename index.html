@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Что сейчас поможет вашему бизнесу?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-container">
+        <!-- Секция заголовка -->
+        <header class="header">
+            <h1>Что сейчас поможет вашему бизнесу?</h1>
+            <p class="subtitle">Ответьте на 3 вопроса — и получите практическую рекомендацию.</p>
+        </header>
+
+        <!-- Секция опроса (Будет заполнена JS) -->
+        <div id="quiz-section">
+            <!-- Вопросы будут вставлены сюда скриптом -->
+        </div>
+
+        <!-- Секция результата и кнопок (Скрыта по умолчанию) -->
+        <div id="result-section" class="hidden">
+            <h2>✨ Ваш результат готов!</h2>
+            <div id="result-card">
+                <h3 id="result-title"></h3>
+                <p id="result-text"></p>
+            </div>
+
+            <!-- Кнопки действий -->
+            <div class="button-group">
+                <button id="btn-discuss" class="action-button primary-btn">Обсудить мой результат</button>
+                <button id="btn-materials" class="action-button secondary-btn">Получать полезные материалы</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Включение данных конфигурации -->
+    <script src="config.js"></script> 
+    <!-- Подключение основной логики -->
+    <script src="script.js"></script>
+
+</body>
+</html>
